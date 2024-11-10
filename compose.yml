@@ -15,7 +15,7 @@ services:
             - 81:80     
 
     mysql:
-        image: mysql:${DB_VERSION:-8.4}
+        image: mysql:${DB_VERSION:-8.3}
         container_name: mysql
         environment:
             MYSQL_ROOT_PASSWORD: ${DB_ROOT_PASSWORD:-toor}
